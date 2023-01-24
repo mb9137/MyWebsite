@@ -3,6 +3,106 @@ Mila Babiker
 <head>
   <style>
     
+    body {
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+
+}
+
+
+
+
+#myBtn {
+
+  display: none;
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 30px;
+
+  z-index: 99;
+
+  font-size: 18px;
+
+  border: none;
+
+  outline: none;
+
+  background-color: red;
+
+  color: white;
+
+  cursor: pointer;
+
+  padding: 15px;
+
+  border-radius: 4px;
+
+}
+
+
+
+
+#myBtn:hover {
+
+  background-color: #555;
+
+}
+
+</style>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+
+// Get the button
+
+let mybutton = document.getElementById("myBtn");
+
+
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+window.onscroll = function() {scrollFunction()};
+
+
+
+
+function scrollFunction() {
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+    mybutton.style.display = "block";
+
+  } else {
+
+    mybutton.style.display = "none";
+
+  }
+
+}
+
+
+
+
+// When the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+
+  document.body.scrollTop = 0;
+
+  document.documentElement.scrollTop = 0;
+
+}
+
+</script>
+
+
       .title {
         background-color:blue
       }
@@ -19,8 +119,7 @@ Mila Babiker
 </head>
 
 <body> 
-<div>
-    
+
  
   
   <h1> <strong class="title">PLAGUES</h1>
@@ -52,7 +151,7 @@ Mila Babiker
       <iframe src="https://giphy.com/embed/3orieVSQMul8RsNo6k" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-12-the-simpsons-12x1-3orieVSQMul8RsNo6k">via GIPHY</a></p>
     
     
-    <p>______________________________________________________________________________________________________________________________________</p>
+    <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
       <h2> <strong class="title">THE BLACK DEATH</h2>
          
         
@@ -63,8 +162,7 @@ Mila Babiker
         </p>
     
         
- </div>
-  <a href="#" class="top"> Back to Top</a>      
+   
 </body>
 
 </html>
